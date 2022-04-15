@@ -1,11 +1,11 @@
 from instabot import Bot
-import time, os.path
- 
+import time, os
+
 directories = ["arduinonano" , "esp8266", "esp32", "iot", "iotprojects", "homeautomation", "digitalelectronics"]
 i=1
 bot = Bot()
 
-bot.login(username = ${{ secrets.USERNAME }}, password = ${{ secrets.PASSWORD }})
+bot.login(username = os.environ.get("USERNAME"), password = os.environ.get("PASSWORD"))
 
 try:
     for directory in directories:
