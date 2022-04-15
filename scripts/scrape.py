@@ -1,7 +1,8 @@
 from instascrape import Hashtag, scrape_posts
 import time, os, conf
 
-SESSIONID = ${{ secrets.SESSIONID }}
+SESSIONID = os.environ.get("SESSIONID")
+
 headers = {"tag-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.36 Edg/87.0.664.57",
             "cookie": f"sessionid={SESSIONID};"}
 
