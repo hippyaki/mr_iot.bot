@@ -1,4 +1,4 @@
-from instabot import Bot
+from instabot-py import Bot
 import time, os
 
 directories = ["arduinonano" , "esp8266", "esp32", "iot", "iotprojects", "homeautomation", "digitalelectronics"]
